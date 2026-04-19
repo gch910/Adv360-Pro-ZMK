@@ -86,7 +86,7 @@
     mod {
       display-name = "Mod";
       bindings = <
-        &tog 4 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &win_mode &mac_mode &none                                                                          &trans                 &none        &none        &none        &none &none &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &win_mode &mac_mode &none                                                                          &trans                 &none        &none        &none        &none &none &none                                                                          &trans                 &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
         &studio_unlock &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &stp STP_BAT &none        &none        &none        &none &none &none
         &none &none        &none        &none        &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none &none &none
