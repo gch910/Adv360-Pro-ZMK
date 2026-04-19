@@ -21,18 +21,32 @@
           bindings = <&kp>, <&kp>;
       };
 
+      mac_on: mac_on {
+          compatible = "zmk,behavior-toggle-layer";
+          #binding-cells = <1>;
+          label = "MAC_ON";
+          toggle-mode = "on";
+      };
+
+      mac_off: mac_off {
+          compatible = "zmk,behavior-toggle-layer";
+          #binding-cells = <1>;
+          label = "MAC_OFF";
+          toggle-mode = "off";
+      };
+
       win_mode: win_mode {
         compatible = "zmk,behavior-macro";
         label = "WIN_MODE";
         #binding-cells = <0>;
-        bindings = <&bt BT_SEL 3>, <&to 0>;
+        bindings = <&bt BT_SEL 3>, <&mac_off 4>;
       };
 
       mac_mode: mac_mode {
           compatible = "zmk,behavior-macro";
           label = "MAC_MODE";
           #binding-cells = <0>;
-          bindings = <&bt BT_SEL 4>, <&to 4>;
+          bindings = <&bt BT_SEL 4>, <&mac_on 4>;
       };
     };
 
